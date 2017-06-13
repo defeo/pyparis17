@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>PyParis 2017 — OpenDreamKit presentation</title>
+
+    <meta name="author" content="Luca De Feo" />
+
+    <meta name="description"
+	  content="OpenDreamKit – The EU is actually paying to do mathematics in Python!" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="http://opendreamkit.org/public/reveal.js/css/reveal.css"/>
+    <link rel="stylesheet" href="http://opendreamkit.org/public/reveal.js/css/theme/white.css" id="theme"/>
+    <style>
+    .reveal .slides {
+        text-align: left;
+    }
+    .reveal .slides section>* {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .reveal h1 { font-size: 2em; text-transform: none}
+    .reveal h2 { font-size: 1.5em; text-transform: none}
+    .reveal h3 { font-size: 1em; text-transform: none}
+    .reveal blockquote { font-style: normal; width: initial; }
+    
+    .reveal section img { border: none; box-shadow: none; }
+    .reveal img[alt="logo"] { width: 30%; margin: 1em; }
+    .reveal img[alt="dream"] { margin: 1em; width: 800px; }
+    .reveal img[alt="twitter"] { vertical-align: bottom; }
+    #thebe { width: 100%; min-height: 500px; }
+    .slides > section:first-child { text-align: center; }
+    #picts { text-align: center; padding: 0 100px; }
+    #picts img { vertical-align: middle; margin: 0 20px; }
+    </style>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+	<section data-markdown data-separator="^---\n" data-separator-vertical="^--\n">
+<script type="text/template">
+![logo](http://opendreamkit.org/public/logos/odk-elected-logo.svg)
+
+### The EU is actually paying to do mathematics in Python!
+
+<small>View these slides at <a id="url"></a></small>
+
+---
+
+# Mathematics in Python?
+
+<div style="height:6ex"></div>
+
+<center>
+Like, you mean, **`numpy`**?
+</center>
+
+--
+
+# Oh, wait!
+
+You mean those crazy guys who think **THIS** has **NO** solutions?
+
+<center>
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <mrow>
+      <msup><mi>x</mi><mn>3</mn></msup>
+      <mo>+</mo>
+      <msup><mi>y</mi><mn>3</mn></msup>
+      <mo>=</mo>
+      <msup><mi>z</mi><mn>3</mn>
+      </msup>
+    </mrow>
+  </math>
+</center>
+  
+<small>
+  <sup>*</sup>What about 1³ + (-1)³ = 0³, smart guy?
+</small>
+
+--
+
+Like, those gals who care about the zeros of **THIS**?
+
+<center>
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <mrow>
+      <mi>ζ</mi><mrow><mo form="prefix">(</mo><mi>s</mi><mo form="postfix">)</mo></mrow>
+      <mo>=</mo>
+      <mstyle displaystyle="true">
+	<munderover>
+          <mo>∑</mo>
+          <mrow><mi>n</mi><mo>=</mo><mn>1</mn>
+          </mrow><mo>∞</mo>
+	</munderover>
+      </mstyle>
+      <mfrac linethickness="1">
+	<mn>1</mn>
+	<mrow><msup><mi>n</mi><mi>s</mi></msup></mrow>
+      </mfrac>
+    </mrow>
+  </math>
+  <a href="https://commons.wikimedia.org/wiki/File:Riemann-Zeta-Detail.png#/media/File:Riemann-Zeta-Detail.png"><img style="vertical-align:middle;margin-left:200px;" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Riemann-Zeta-Detail.png" alt="Riemann-Zeta-Detail.png"></a>
+</center>
+
+--
+
+## Those guys!
+
+<div id="picts">
+<a href="https://commons.wikimedia.org/wiki/File:Pierre_de_Fermat.jpg#/media/File:Pierre_de_Fermat.jpg"><img width="180" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Pierre_de_Fermat.jpg" alt="Pierre de Fermat.jpg"></a>
+<a href="https://commons.wikimedia.org/wiki/File:GodfreyKneller-IsaacNewton-1689.jpg#/media/File:GodfreyKneller-IsaacNewton-1689.jpg"><img width="180" src="https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg" alt="Isaac Newton"></a>
+<a href="https://commons.wikimedia.org/wiki/File:Carl_Friedrich_Gauss_1840_by_Jensen.jpg#/media/File:Carl_Friedrich_Gauss_1840_by_Jensen.jpg"><img width="180" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Carl_Friedrich_Gauss_1840_by_Jensen.jpg/1200px-Carl_Friedrich_Gauss_1840_by_Jensen.jpg" alt="Carl Friedrich Gauss 1840 by Jensen.jpg"></a>
+<a href="https://commons.wikimedia.org/wiki/File:Noether.jpg#/media/File:Noether.jpg"><img width="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Noether.jpg/1200px-Noether.jpg" alt="Noether.jpg"></a>
+<a href="https://blog.sciencemuseum.org.uk/the-spirit-of-alan-turing/"><img width="180" src="https://blog.sciencemuseum.org.uk/wp-content/uploads/2013/12/Alan-Turing-29-March-1951-picture-credit-NPL-Archive-Science-Museum1.jpg"></a>
+<a href="https://commons.wikimedia.org/wiki/File:Cedric_Villani_at_his_office_2015_n3.jpg#/media/File:Cedric_Villani_at_his_office_2015_n3.jpg"><img width="180" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Cedric_Villani_at_his_office_2015_n3.jpg/1200px-Cedric_Villani_at_his_office_2015_n3.jpg" alt="Cedric Villani at his office 2015 n3.jpg"></a>
+</div>
+
+---
+
+## FOSS ecosystem for mathematics
+
+### Python
+
+- [SageMath](http://sagemath.org) (Symbolics, Algebra, Number theory, Combinatorics, ...)
+- [SnapPy](https://www.math.uic.edu/t3m/SnapPy/) (Topology, Geometry)
+- [SymPy](http://www.sympy.org/) (Symbolic calculus)
+- ...
+
+--
+
+### Other
+
+- [GAP](http://www.gap-system.org/) (C, Group theory)
+- [PARI/GP](http://pari.math.u-bordeaux.fr/) (C, Number theory)
+- [Singular](https://www.singular.uni-kl.de/) (C++, Algebra, Geometry)
+- [GMP](http://gmplib.org/), [MPIR](http://mpir.org/) (C, BigNums)
+- [Flint](http://flintlib.org/) (C, Algebra, Number theory)
+- [LinBox](http://linalg.org/) (C++, exact Linear algebra)
+- [NTL](http://shoup.net/ntl/) (C++, Algebra, Number theory)
+- ...
+
+---
+
+# Who?
+
+### <http://opendreamkit.org/>
+
+- EU H2020 project, call on *Virtual Research Environments*.
+- Budget: **7.6M€**.
+- **4 years**: Sep 2015 – Aug 2019.
+- [15 sites, 50 participants](http://opendreamkit.org/partners/).
+- 7 *work pacakges*, 828 *person-months*.
+- [217 (and counting) GitHub issues](https://github.com/OpenDreamKit/OpenDreamKit/issues), [57 *tasks*](https://github.com/OpenDreamKit/OpenDreamKit/issues?utf8=%E2%9C%93&q=is%3Aopen%20is%3Aissue%20%20label%3Atask%20), [85 *deliverables*](https://github.com/OpenDreamKit/OpenDreamKit/issues?q=is%3Aopen+is%3Aissue+label%3Adeliverable).
+
+--
+
+### Software
+
+- 4 systems (GAP, PARI/GP, SageMath, Singular),
+- [Jupyer notebook](http://jupyter.org/),
+- *uncountable* libraries and packages!
+
+--
+
+### 100% developers, 100% open source
+
+- GAP (St Andrews, Oxford)
+- Linbox (Grenoble)
+- PARI/GP (Bordeaux, Gent, Versailles)
+- SageMath (Bordeaux, Gent, Grenoble, Logilab, Oxford, Paris Sud, Versailles, Warwick)
+- Singular, MPIR (Kaiserslautern)
+- LMFDB (Warwick, Zürich)
+- MathHub, MMT/OpenMath (Bremen)
+- Jupyter (Simula)
+- Scientific Python (SouthHampton, Sheffield, Silesia)
+- ...
+
+---
+
+# What?
+
+> **Virtual Research Environment (VRE)**  
+> <small>*noun, n., (newspeak)*</small>  
+> Groups of researchers, typically widely dispersed who are working
+> together through ubiquitous, trusted and easy access to services for
+> scientific data, computing, and networking, in a collaborative virtual
+> environment.
+
+**Translation:** Research + Cloud.
+
+--
+
+## So, what do you REALLY do?
+
+### No mathematics! Mostly infrastructure work
+
+- Collaborative workspaces (JupyterHub, SageMathCloud)
+- User interfaces (Jupyter notebook)
+- Computational components (Linbox, PARI/GP, GAP, SageMath, Singular, ...)
+- Data / knowledge bases (LMFDB, MathHub, ...)
+- Physical resources (Cloud infrastructure, ...)
+
+--
+
+## Scale to ANY environment
+
+- Personal laptop;
+- School lab;
+- University cloud;
+- A European grid infrastructure.
+
+---
+
+### So you can finally compute the millionth digit of π!
+
+<iframe id="thebe" src="thebe.html"></iframe>
+
+*powered by [thebe.js](https://github.com/oreillymedia/thebe)
+
+---
+
+# Follow us!
+
+## <http://opendreamkit.org/>
+
+## [![twitter](http://opendreamkit.org/public/twitter.png) @opendreamkit](https://twitter.com/opendreamkit)
+
+## We are [hiring](http://opendreamkit.org/joinus/)!
+
+
+</script>
+	</section>
+      </div>
+    </div>
+    
+    <script src="http://opendreamkit.org/public/reveal.js/lib/js/head.min.js"></script>
+    <script src="http://opendreamkit.org/public/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: false,
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        transitionSpeed: 'fast',
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'http://opendreamkit.org/public/reveal.js/plugin/markdown/marked.js' },
+          { src: 'http://opendreamkit.org/public/reveal.js/plugin/markdown/markdown.js' },
+        ]
+      });
+    </script>
+    <script>
+      Reveal.addEventListener( 'ready', function(event) {
+      document.getElementById('url').textContent = window.location;
+      });
+    </script>
+  </body>
+</html>
